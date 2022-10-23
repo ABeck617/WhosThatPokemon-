@@ -49,9 +49,13 @@ class ViewController: UIViewController {
     // setImage method lets us control what is on the screen
     func askQuestion(){
         pokemon.shuffle()
+        correctAnswer = Int.random(in: 0...2)
+        
         button1.setImage(UIImage(named: pokemon[0]), for: .normal)
         button2.setImage(UIImage(named: pokemon[1]), for: .normal)
         button3.setImage(UIImage(named: pokemon[2]), for: .normal)
+        
+        title = pokemon[correctAnswer].uppercased()
     }
 
 
