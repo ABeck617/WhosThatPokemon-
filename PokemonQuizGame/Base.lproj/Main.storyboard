@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FHz-Kk-rAb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PokemonQuizGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L01-Bx-gTl">
+                                <rect key="frame" x="139" y="100" width="136.5" height="126.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bulbasaur"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLz-Kw-JIG">
+                                <rect key="frame" x="139" y="256.5" width="136.5" height="126.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bulbasaur"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcT-VM-AsO">
+                                <rect key="frame" x="139" y="413" width="136.5" height="126.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bulbasaur"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gcT-VM-AsO" firstAttribute="centerX" secondItem="oLz-Kw-JIG" secondAttribute="centerX" id="8B9-ex-7fx"/>
+                            <constraint firstItem="gcT-VM-AsO" firstAttribute="top" secondItem="oLz-Kw-JIG" secondAttribute="bottom" constant="30" id="M1U-MG-3mR"/>
+                            <constraint firstItem="oLz-Kw-JIG" firstAttribute="top" secondItem="L01-Bx-gTl" secondAttribute="bottom" constant="30" id="UMU-J5-De4"/>
+                            <constraint firstItem="L01-Bx-gTl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="faV-I4-JeX"/>
+                            <constraint firstItem="L01-Bx-gTl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="g5P-dF-Frh"/>
+                            <constraint firstItem="oLz-Kw-JIG" firstAttribute="centerX" secondItem="L01-Bx-gTl" secondAttribute="centerX" id="q5f-sV-GQ4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4AQ-Gi-ZOZ"/>
+                    <connections>
+                        <outlet property="button1" destination="L01-Bx-gTl" id="81z-oS-a4u"/>
+                        <outlet property="button2" destination="oLz-Kw-JIG" id="pWD-A6-LzB"/>
+                        <outlet property="button3" destination="gcT-VM-AsO" id="QCq-Q3-5Ll"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="939.13043478260875" y="69.642857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XW6-sd-Y3G">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FHz-Kk-rAb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0rW-du-SmV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UOf-pm-MQf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ReZ-BR-br5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-362" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bulbasaur" width="112.5" height="112.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
