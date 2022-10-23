@@ -16,12 +16,19 @@ class ViewController: UIViewController {
     var score = 0
     var pokemon = [String]()
     
-    // new property to track 
+    // new property to track
     var correctAnswer = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        button1.layer.borderWidth = 1
+        button2.layer.borderWidth = 2
+        
+        
+        
+        
         
         pokemon += ["bulbasaur", "charmander", "chkorita", "cyndaquil", "mudkip", "squritle", "torchic", "totodile", "trecko"]
         
