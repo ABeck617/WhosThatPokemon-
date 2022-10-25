@@ -59,6 +59,22 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
+        
+        var title: String
+        
+        
+        // Checking if the answer was correct
+        if sender.tag == correctAnswer {
+            title = "That is Correct"
+            // adjusting the players score
+            score += 1
+        } else {
+            title = "I'm sorry that is incorrect"
+            score -= 1
+        }
+        
+       
+        
     }
     
 }
