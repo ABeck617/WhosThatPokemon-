@@ -58,6 +58,8 @@ class ViewController: UIViewController {
         title = pokemon[correctAnswer].uppercased()
     }
 
-
+    @IBAction func buttonTapped(_ sender: UIButton) {
+    }
+    
 }
 
